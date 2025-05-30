@@ -4,10 +4,31 @@
 <head>
   <meta charset="UTF-8" />
   <title>Custom Chess Variant</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    #game-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #player-info,
+    #error-message {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>POES</h1>
   <div id="game-container"></div>
   <div id="player-info"></div>
   <div id="error-message" style="display: none; color: red;"></div>
